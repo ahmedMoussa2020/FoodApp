@@ -47,10 +47,14 @@ const SectionEnd = styled.View`
   justify-content: flex-end;
 `;
 
+const Open = styled(SvgXml)`
+  flex-direction: row;
+`;
+
 export const RestaurantInfoCard = ({ restaurant = {} }) => {
   const {
     name = "Marka Cadey Restaurant",
-    icon,
+    icon = "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
     photos = [
       "https://staticfanpage.akamaized.net/wp-content/uploads/sites/22/2021/09/beef-burger-1200x675.jpg",
     ],
